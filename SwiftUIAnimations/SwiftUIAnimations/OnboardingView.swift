@@ -14,14 +14,7 @@ struct OnboardingView: View {
 
     var body: some View {
         ZStack {
-            RiveViewModel(fileName: "shapes").view()
-                .ignoresSafeArea()
-                .blur(radius: 30)
-                .background {
-                    Image(.spline)
-                        .blur(radius: 50)
-                        .offset(x: 200, y: 100)
-                }
+            animatedBackground
 
             button.view()
                 .frame(width: 236, height: 64)
@@ -41,6 +34,17 @@ struct OnboardingView: View {
                     button.play(animationName: "active")
                 }
         }
+    }
+
+    private var animatedBackground: some View {
+        RiveViewModel(fileName: "shapes").view()
+            .ignoresSafeArea()
+            .blur(radius: 30)
+            .background {
+                Image(.spline)
+                    .blur(radius: 50)
+                    .offset(x: 200, y: 100)
+            }
     }
 }
 
