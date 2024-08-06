@@ -20,28 +20,13 @@ struct SignInView: View {
             Text("Access to 240+ hours of content. Learn design and code, by building real apps with React and Swift.")
                 .customFont(.headline)
 
-            VStack {
+            VStack(alignment: 0, spacing: .leading) {
                 Text("Email")
                     .customFont(.headline)
                 .foregroundStyle(.secondary)
 
                 TextField("", text: $email)
-                    .padding(15)
-                    .padding(.leading, 36)
-                    .background(.white)
-                    .mask {
-                        RoundedRectangle(cornerRadius: 10, style: .continuous)
-                    }
-                    .overlay {
-                        RoundedRectangle(cornerRadius: 10, style: .continuous)
-                            .stroke()
-                            .fill(.black.opacity(0.1))
-                    }
-                    .overlay {
-                        Image(.iconEmail)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .padding(.leading, 8)
-                    }
+                    .customTextField()
             }
 
             Divider()

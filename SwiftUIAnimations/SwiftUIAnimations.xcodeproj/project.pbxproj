@@ -25,6 +25,7 @@
 		8A2F1A5F2C620DD3003DB628 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A2F1A5C2C620DD3003DB628 /* Inter-SemiBold.ttf */; };
 		8A2F1A622C6210FA003DB628 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F1A612C6210FA003DB628 /* CustomFont.swift */; };
 		8A2F1A652C621E2B003DB628 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F1A642C621E2B003DB628 /* SignInView.swift */; };
+		8A2F1A672C623759003DB628 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F1A662C623759003DB628 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		8A2F1A602C620E3F003DB628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8A2F1A612C6210FA003DB628 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 		8A2F1A642C621E2B003DB628 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		8A2F1A662C623759003DB628 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				8A2F1A552C60F296003DB628 /* OnboardingView.swift */,
 				8A2F1A612C6210FA003DB628 /* CustomFont.swift */,
 				8A2F1A642C621E2B003DB628 /* SignInView.swift */,
+				8A2F1A662C623759003DB628 /* CustomTextField.swift */,
 			);
 			path = SwiftUIAnimations;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				8A2F1A562C60F296003DB628 /* OnboardingView.swift in Sources */,
 				8A2F1A622C6210FA003DB628 /* CustomFont.swift in Sources */,
+				8A2F1A672C623759003DB628 /* CustomTextField.swift in Sources */,
 				8A2F1A382C60E5E7003DB628 /* ContentView.swift in Sources */,
 				8A2F1A362C60E5E7003DB628 /* SwiftUIAnimationsApp.swift in Sources */,
 				8A2F1A652C621E2B003DB628 /* SignInView.swift in Sources */,
