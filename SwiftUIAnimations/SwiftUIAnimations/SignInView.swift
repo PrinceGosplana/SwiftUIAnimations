@@ -20,13 +20,22 @@ struct SignInView: View {
             Text("Access to 240+ hours of content. Learn design and code, by building real apps with React and Swift.")
                 .customFont(.headline)
 
-            VStack(alignment: 0, spacing: .leading) {
+            VStack(alignment: .leading, spacing: 0) {
                 Text("Email")
                     .customFont(.headline)
                 .foregroundStyle(.secondary)
 
                 TextField("", text: $email)
                     .customTextField()
+            }
+
+            VStack(alignment: .leading, spacing: 0) {
+                Text("Password")
+                    .customFont(.headline)
+                .foregroundStyle(.secondary)
+
+                SecureField("", text: $password)
+                    .customTextField(image: Image(.iconLock))
             }
 
             Divider()
