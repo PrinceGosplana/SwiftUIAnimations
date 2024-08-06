@@ -42,6 +42,7 @@
 		8A2F1A5A2C620DD3003DB628 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		8A2F1A5B2C620DD3003DB628 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		8A2F1A5C2C620DD3003DB628 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		8A2F1A602C620E3F003DB628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 		8A2F1A342C60E5E7003DB628 /* SwiftUIAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				8A2F1A602C620E3F003DB628 /* Info.plist */,
 				8A2F1A352C60E5E7003DB628 /* SwiftUIAnimationsApp.swift */,
 				8A2F1A372C60E5E7003DB628 /* ContentView.swift */,
 				8A2F1A392C60E5EA003DB628 /* Assets.xcassets */,
@@ -342,6 +344,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIAnimations/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIAnimations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -370,6 +373,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIAnimations/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIAnimations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
