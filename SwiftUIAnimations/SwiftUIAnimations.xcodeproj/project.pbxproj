@@ -26,6 +26,8 @@
 		8A2F1A622C6210FA003DB628 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F1A612C6210FA003DB628 /* CustomFont.swift */; };
 		8A2F1A652C621E2B003DB628 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F1A642C621E2B003DB628 /* SignInView.swift */; };
 		8A2F1A672C623759003DB628 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F1A662C623759003DB628 /* CustomTextField.swift */; };
+		8A2F1A6A2C623C02003DB628 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F1A692C623C02003DB628 /* RoundedCorner.swift */; };
+		8A2F1A6D2C623E09003DB628 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F1A6C2C623E09003DB628 /* Color+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		8A2F1A612C6210FA003DB628 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 		8A2F1A642C621E2B003DB628 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		8A2F1A662C623759003DB628 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		8A2F1A692C623C02003DB628 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		8A2F1A6C2C623E09003DB628 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 		8A2F1A342C60E5E7003DB628 /* SwiftUIAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				8A2F1A6B2C623DF2003DB628 /* Extensioins */,
+				8A2F1A682C623BCF003DB628 /* Helpers */,
 				8A2F1A602C620E3F003DB628 /* Info.plist */,
 				8A2F1A352C60E5E7003DB628 /* SwiftUIAnimationsApp.swift */,
 				8A2F1A372C60E5E7003DB628 /* ContentView.swift */,
@@ -90,9 +96,7 @@
 				8A2F1A432C60E6A7003DB628 /* RiveAssets */,
 				8A2F1A3B2C60E5EA003DB628 /* Preview Content */,
 				8A2F1A552C60F296003DB628 /* OnboardingView.swift */,
-				8A2F1A612C6210FA003DB628 /* CustomFont.swift */,
 				8A2F1A642C621E2B003DB628 /* SignInView.swift */,
-				8A2F1A662C623759003DB628 /* CustomTextField.swift */,
 			);
 			path = SwiftUIAnimations;
 			sourceTree = "<group>";
@@ -127,6 +131,24 @@
 				8A2F1A5C2C620DD3003DB628 /* Inter-SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8A2F1A682C623BCF003DB628 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8A2F1A662C623759003DB628 /* CustomTextField.swift */,
+				8A2F1A612C6210FA003DB628 /* CustomFont.swift */,
+				8A2F1A692C623C02003DB628 /* RoundedCorner.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		8A2F1A6B2C623DF2003DB628 /* Extensioins */ = {
+			isa = PBXGroup;
+			children = (
+				8A2F1A6C2C623E09003DB628 /* Color+Ext.swift */,
+			);
+			path = Extensioins;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +242,9 @@
 				8A2F1A672C623759003DB628 /* CustomTextField.swift in Sources */,
 				8A2F1A382C60E5E7003DB628 /* ContentView.swift in Sources */,
 				8A2F1A362C60E5E7003DB628 /* SwiftUIAnimationsApp.swift in Sources */,
+				8A2F1A6D2C623E09003DB628 /* Color+Ext.swift in Sources */,
 				8A2F1A652C621E2B003DB628 /* SignInView.swift in Sources */,
+				8A2F1A6A2C623C02003DB628 /* RoundedCorner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
