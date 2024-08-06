@@ -20,6 +20,9 @@
 		8A2F1A512C60E6A8003DB628 /* icons.riv in Resources */ = {isa = PBXBuildFile; fileRef = 8A2F1A4A2C60E6A8003DB628 /* icons.riv */; };
 		8A2F1A542C60E730003DB628 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 8A2F1A532C60E730003DB628 /* RiveRuntime */; };
 		8A2F1A562C60F296003DB628 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F1A552C60F296003DB628 /* OnboardingView.swift */; };
+		8A2F1A5D2C620DD3003DB628 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A2F1A5A2C620DD3003DB628 /* Inter-Regular.ttf */; };
+		8A2F1A5E2C620DD3003DB628 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A2F1A5B2C620DD3003DB628 /* Poppins-Bold.ttf */; };
+		8A2F1A5F2C620DD3003DB628 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A2F1A5C2C620DD3003DB628 /* Inter-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		8A2F1A492C60E6A8003DB628 /* button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = button.riv; sourceTree = "<group>"; };
 		8A2F1A4A2C60E6A8003DB628 /* icons.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = icons.riv; sourceTree = "<group>"; };
 		8A2F1A552C60F296003DB628 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		8A2F1A5A2C620DD3003DB628 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		8A2F1A5B2C620DD3003DB628 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		8A2F1A5C2C620DD3003DB628 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 				8A2F1A352C60E5E7003DB628 /* SwiftUIAnimationsApp.swift */,
 				8A2F1A372C60E5E7003DB628 /* ContentView.swift */,
 				8A2F1A392C60E5EA003DB628 /* Assets.xcassets */,
+				8A2F1A592C620DD3003DB628 /* Fonts */,
 				8A2F1A432C60E6A7003DB628 /* RiveAssets */,
 				8A2F1A3B2C60E5EA003DB628 /* Preview Content */,
 				8A2F1A552C60F296003DB628 /* OnboardingView.swift */,
@@ -99,6 +106,16 @@
 				8A2F1A4A2C60E6A8003DB628 /* icons.riv */,
 			);
 			path = RiveAssets;
+			sourceTree = "<group>";
+		};
+		8A2F1A592C620DD3003DB628 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8A2F1A5A2C620DD3003DB628 /* Inter-Regular.ttf */,
+				8A2F1A5B2C620DD3003DB628 /* Poppins-Bold.ttf */,
+				8A2F1A5C2C620DD3003DB628 /* Inter-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,12 +182,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A2F1A5F2C620DD3003DB628 /* Inter-SemiBold.ttf in Resources */,
 				8A2F1A4F2C60E6A8003DB628 /* shapes.riv in Resources */,
 				8A2F1A4D2C60E6A8003DB628 /* check.riv in Resources */,
 				8A2F1A3D2C60E5EA003DB628 /* Preview Assets.xcassets in Resources */,
 				8A2F1A4E2C60E6A8003DB628 /* menu_button.riv in Resources */,
 				8A2F1A4B2C60E6A8003DB628 /* house.riv in Resources */,
 				8A2F1A502C60E6A8003DB628 /* button.riv in Resources */,
+				8A2F1A5D2C620DD3003DB628 /* Inter-Regular.ttf in Resources */,
+				8A2F1A5E2C620DD3003DB628 /* Poppins-Bold.ttf in Resources */,
 				8A2F1A3A2C60E5EA003DB628 /* Assets.xcassets in Resources */,
 				8A2F1A4C2C60E6A8003DB628 /* confetti.riv in Resources */,
 				8A2F1A512C60E6A8003DB628 /* icons.riv in Resources */,
