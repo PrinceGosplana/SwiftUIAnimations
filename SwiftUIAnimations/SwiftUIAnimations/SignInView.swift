@@ -38,6 +38,16 @@ struct SignInView: View {
                     .customTextField(image: Image(.iconLock))
             }
 
+            Label("Sign In", systemImage: "arrow.right")
+                .customFont(.headline)
+                .padding(20)
+                .frame(maxWidth: .infinity)
+                .background(Color(hex: "F77D8E"))
+                .foregroundStyle(.white)
+                .cornerRadius(20, corners: [.topRight, .bottomLeft, .bottomRight])
+                .cornerRadius(8, corners: [.topLeft])
+                .shadow(color: Color(hex: "F77D8E").opacity(0.5), radius: 20, x: 0, y: 10)
+
             HStack {
                 Rectangle().frame(height: 1).opacity(0.1)
                 Text("OR").customFont(.subheadline2).foregroundStyle(.black.opacity(0.3))
