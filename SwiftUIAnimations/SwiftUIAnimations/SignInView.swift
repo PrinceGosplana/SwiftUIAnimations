@@ -98,6 +98,7 @@ struct SignInView: View {
                     .allowsHitTesting(false)
             }
             confetti.view()
+                .scaleEffect(3)
                 .allowsHitTesting(false)
         }
     }
