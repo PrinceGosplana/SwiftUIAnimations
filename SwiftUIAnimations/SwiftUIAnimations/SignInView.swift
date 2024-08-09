@@ -12,7 +12,9 @@ struct SignInView: View {
 
     @State var email = ""
     @State var password = ""
+    @State var isLoading = false
     let check = RiveViewModel(fileName: "check", stateMachineName: "State Machine 1")
+    let confetti = RiveViewModel(fileName: "confetti", stateMachineName: "State Machine 1")
 
     var body: some View {
         VStack(spacing: 24) {
@@ -90,8 +92,12 @@ struct SignInView: View {
         )
         .padding()
         .overlay {
-            check.view()
-                .frame(width: 100, height: 100)
+            if isLoading {
+                check.view()
+                    .frame(width: 100, height: 100)
+                    .allowsHitTesting(false)
+            }
+            confetti.view()
                 .allowsHitTesting(false)
         }
     }
@@ -99,7 +105,14 @@ struct SignInView: View {
     @ViewBuilder
     func SignInButton() -> some View {
         Button {
-            try? check.triggerInput("Check")
+            isLoading = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                try? check.triggerInput("Check")
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                isLoading = false
+                try? confetti.triggerInput("Trigger explosion")
+            }
         } label: {
             Label("Sign In", systemImage: "arrow.right")
                 .customFont(.headline)
