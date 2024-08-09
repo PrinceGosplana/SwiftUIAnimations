@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A1D5DC52C65FDBB0058C0C6 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D5DC42C65FDBB0058C0C6 /* TabBarView.swift */; };
 		8A2F1A362C60E5E7003DB628 /* SwiftUIAnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F1A352C60E5E7003DB628 /* SwiftUIAnimationsApp.swift */; };
 		8A2F1A382C60E5E7003DB628 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F1A372C60E5E7003DB628 /* ContentView.swift */; };
 		8A2F1A3A2C60E5EA003DB628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2F1A392C60E5EA003DB628 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A1D5DC42C65FDBB0058C0C6 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		8A2F1A322C60E5E7003DB628 /* SwiftUIAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A2F1A352C60E5E7003DB628 /* SwiftUIAnimationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationsApp.swift; sourceTree = "<group>"; };
 		8A2F1A372C60E5E7003DB628 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			children = (
 				8A2F1A552C60F296003DB628 /* OnboardingView.swift */,
 				8A2F1A642C621E2B003DB628 /* SignInView.swift */,
+				8A1D5DC42C65FDBB0058C0C6 /* TabBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A2F1A562C60F296003DB628 /* OnboardingView.swift in Sources */,
+				8A1D5DC52C65FDBB0058C0C6 /* TabBarView.swift in Sources */,
 				8A2F1A622C6210FA003DB628 /* CustomFont.swift in Sources */,
 				8A2F1A672C623759003DB628 /* CustomTextField.swift in Sources */,
 				8A2F1A382C60E5E7003DB628 /* ContentView.swift in Sources */,
