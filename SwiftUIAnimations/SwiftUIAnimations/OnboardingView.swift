@@ -26,7 +26,26 @@ struct OnboardingView: View {
 
             if showModel {
                 SignInView()
-                    .transition(.move(edge: .bottom))
+                    .transition(.move(edge: .bottom).combined(with: .opacity))
+                    .overlay {
+                        Button {
+                            withAnimation(.spring()) { showModel = false }
+                        } label: {
+                            Image(systemName: "xmark")
+                                .frame(width: 36, height: 36)
+                                .foregroundStyle(.black)
+                                .background(.white)
+                                .mask(Circle())
+                                .shadow(
+                                    color: Color(.shadow).opacity(0.3),
+                                    radius: 5,
+                                    x: 0,
+                                    y: 3
+                            )
+                        }
+                        .frame(maxHeight: .infinity, alignment: .bottom)
+                    }
+                    .zIndex(1)
             }
         }
     }
