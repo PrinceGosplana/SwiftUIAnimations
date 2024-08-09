@@ -18,6 +18,11 @@ struct OnboardingView: View {
             animatedBackground
 
             content
+                .offset(y: showModel ? -50 : 0)
+
+            Color(.shadow)
+                .opacity(showModel ? 0.4 : 0)
+                .ignoresSafeArea()
 
             if showModel {
                 SignInView()
