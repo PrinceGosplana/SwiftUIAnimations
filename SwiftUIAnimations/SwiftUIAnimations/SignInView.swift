@@ -13,6 +13,8 @@ struct SignInView: View {
     @State var email = ""
     @State var password = ""
     @State var isLoading = false
+    @Binding var showModel: Bool
+
     let check = RiveViewModel(fileName: "check", stateMachineName: "State Machine 1")
     let confetti = RiveViewModel(fileName: "confetti", stateMachineName: "State Machine 1")
 
@@ -130,6 +132,9 @@ struct SignInView: View {
                 isLoading = false
                 try? confetti.triggerInput("Trigger explosion")
             }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+                withAnimation { showModel = false }
+            }
         } else {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 try? check.triggerInput("Error")
@@ -142,5 +147,5 @@ struct SignInView: View {
 }
 
 #Preview {
-    SignInView()
+    SignInView(showModel: .constant(true))
 }
