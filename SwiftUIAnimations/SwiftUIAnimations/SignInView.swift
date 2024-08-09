@@ -106,14 +106,7 @@ struct SignInView: View {
     @ViewBuilder
     func SignInButton() -> some View {
         Button {
-            isLoading = true
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                try? check.triggerInput("Check")
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                isLoading = false
-                try? confetti.triggerInput("Trigger explosion")
-            }
+            logIn()
         } label: {
             Label("Sign In", systemImage: "arrow.right")
                 .customFont(.headline)
@@ -124,6 +117,26 @@ struct SignInView: View {
                 .cornerRadius(20, corners: [.topRight, .bottomLeft, .bottomRight])
                 .cornerRadius(8, corners: [.topLeft])
                 .shadow(color: Color(hex: "F77D8E").opacity(0.5), radius: 20, x: 0, y: 10)
+        }
+    }
+
+    private func logIn() {
+        isLoading = true
+        if email != "" {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                try? check.triggerInput("Check")
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                isLoading = false
+                try? confetti.triggerInput("Trigger explosion")
+            }
+        } else {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                try? check.triggerInput("Error")
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                isLoading = false
+            }
         }
     }
 }
