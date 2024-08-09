@@ -67,6 +67,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A1D5DC32C65FC6D0058C0C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A2F1A552C60F296003DB628 /* OnboardingView.swift */,
+				8A2F1A642C621E2B003DB628 /* SignInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		8A2F1A292C60E5E7003DB628 = {
 			isa = PBXGroup;
 			children = (
@@ -95,8 +104,7 @@
 				8A2F1A592C620DD3003DB628 /* Fonts */,
 				8A2F1A432C60E6A7003DB628 /* RiveAssets */,
 				8A2F1A3B2C60E5EA003DB628 /* Preview Content */,
-				8A2F1A552C60F296003DB628 /* OnboardingView.swift */,
-				8A2F1A642C621E2B003DB628 /* SignInView.swift */,
+				8A1D5DC32C65FC6D0058C0C6 /* Views */,
 			);
 			path = SwiftUIAnimations;
 			sourceTree = "<group>";
