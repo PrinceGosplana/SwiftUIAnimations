@@ -35,6 +35,7 @@
 		8AC293202C69EC4C00CA6C96 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC2931E2C69EC4C00CA6C96 /* Course.swift */; };
 		8AC293222C69F18900CA6C96 /* VCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC293212C69F18900CA6C96 /* VCard.swift */; };
 		8AC293242C69F6AD00CA6C96 /* HCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC293232C69F6AD00CA6C96 /* HCard.swift */; };
+		8AC293262C69FB8000CA6C96 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC293252C69FB8000CA6C96 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		8AC2931E2C69EC4C00CA6C96 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		8AC293212C69F18900CA6C96 /* VCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCard.swift; sourceTree = "<group>"; };
 		8AC293232C69F6AD00CA6C96 /* HCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCard.swift; sourceTree = "<group>"; };
+		8AC293252C69FB8000CA6C96 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				8A2F1A552C60F296003DB628 /* OnboardingView.swift */,
 				8A2F1A642C621E2B003DB628 /* SignInView.swift */,
 				8A1D5DC42C65FDBB0058C0C6 /* TabBarView.swift */,
+				8AC293252C69FB8000CA6C96 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				8A2F1A362C60E5E7003DB628 /* SwiftUIAnimationsApp.swift in Sources */,
 				8A2F1A6D2C623E09003DB628 /* Color+Ext.swift in Sources */,
 				8A2F1A652C621E2B003DB628 /* SignInView.swift in Sources */,
+				8AC293262C69FB8000CA6C96 /* HomeView.swift in Sources */,
 				8A1D5DC72C6601460058C0C6 /* TabItem.swift in Sources */,
 				8A2F1A6A2C623C02003DB628 /* RoundedCorner.swift in Sources */,
 			);
