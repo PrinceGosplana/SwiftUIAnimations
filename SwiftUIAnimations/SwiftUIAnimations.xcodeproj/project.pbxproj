@@ -31,6 +31,8 @@
 		8A2F1A672C623759003DB628 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F1A662C623759003DB628 /* CustomTextField.swift */; };
 		8A2F1A6A2C623C02003DB628 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F1A692C623C02003DB628 /* RoundedCorner.swift */; };
 		8A2F1A6D2C623E09003DB628 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F1A6C2C623E09003DB628 /* Color+Ext.swift */; };
+		8AC2931F2C69EC4C00CA6C96 /* CourseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC2931D2C69EC4C00CA6C96 /* CourseSection.swift */; };
+		8AC293202C69EC4C00CA6C96 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC2931E2C69EC4C00CA6C96 /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		8A2F1A662C623759003DB628 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		8A2F1A692C623C02003DB628 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		8A2F1A6C2C623E09003DB628 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		8AC2931D2C69EC4C00CA6C96 /* CourseSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseSection.swift; sourceTree = "<group>"; };
+		8AC2931E2C69EC4C00CA6C96 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 				8A2F1A352C60E5E7003DB628 /* SwiftUIAnimationsApp.swift */,
 				8A2F1A372C60E5E7003DB628 /* ContentView.swift */,
 				8A2F1A392C60E5EA003DB628 /* Assets.xcassets */,
+				8AC2931C2C69EC4C00CA6C96 /* Model */,
 				8A2F1A592C620DD3003DB628 /* Fonts */,
 				8A2F1A432C60E6A7003DB628 /* RiveAssets */,
 				8A2F1A3B2C60E5EA003DB628 /* Preview Content */,
@@ -166,6 +171,15 @@
 				8A2F1A6C2C623E09003DB628 /* Color+Ext.swift */,
 			);
 			path = Extensioins;
+			sourceTree = "<group>";
+		};
+		8AC2931C2C69EC4C00CA6C96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8AC2931D2C69EC4C00CA6C96 /* CourseSection.swift */,
+				8AC2931E2C69EC4C00CA6C96 /* Course.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,10 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AC293202C69EC4C00CA6C96 /* Course.swift in Sources */,
 				8A2F1A562C60F296003DB628 /* OnboardingView.swift in Sources */,
 				8A1D5DC52C65FDBB0058C0C6 /* TabBarView.swift in Sources */,
 				8A2F1A622C6210FA003DB628 /* CustomFont.swift in Sources */,
 				8A2F1A672C623759003DB628 /* CustomTextField.swift in Sources */,
+				8AC2931F2C69EC4C00CA6C96 /* CourseSection.swift in Sources */,
 				8A2F1A382C60E5E7003DB628 /* ContentView.swift in Sources */,
 				8A1D5DC92C6612880058C0C6 /* Tab.swift in Sources */,
 				8A2F1A362C60E5E7003DB628 /* SwiftUIAnimationsApp.swift in Sources */,
