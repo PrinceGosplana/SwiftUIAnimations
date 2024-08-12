@@ -10,7 +10,7 @@ import SwiftUI
 
 struct TabBarView: View {
 
-    @State var selectedTab: Tab = .chat
+    @AppStorage("selectedTab") var selectedTab: Tab = .chat
     private let icon = RiveViewModel(fileName: "icons", stateMachineName: "CHAT_Interactivity", artboardName: "CHAT")
 
     /// Animation
@@ -35,9 +35,9 @@ struct TabBarView: View {
     var content: some View {
         ForEach(TabItem.tabItems) { item in
             Button {
-                try? item.icon.setInput("active", value: true)
+                item.icon.setInput("active", value: true)
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    try? item.icon.setInput("active", value: false)
+                    item.icon.setInput("active", value: false)
                 }
                 withAnimation {
                     selectedTab = item.tab
