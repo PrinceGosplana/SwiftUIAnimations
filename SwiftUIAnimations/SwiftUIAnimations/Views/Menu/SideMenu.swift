@@ -29,23 +29,9 @@ struct SideMenu: View {
             }
             .padding()
 
-            Text("BROWSE")
-                .customFont(.subheadline2)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal, 24)
-                .padding(.top, 40)
-                .opacity(0.7)
+            Section(title: "BROWSE", items: MenuItem.menuItems, selectedMenu: $selectedMenu)
 
-            VStack(alignment: .leading, spacing: 0) {
-
-                ForEach(MenuItem.menuItems) { item in
-                    Rectangle()
-                        .frame(height: 1)
-                        .opacity(0.1)
-                        .padding(.horizontal)
-                    MenuRow(item: item, selectedMenu: $selectedMenu)
-                }
-            }
+            Section(title: "HISTORY", items: MenuItem.menuItems2, selectedMenu: $selectedMenu)
 
             Spacer()
         }
@@ -60,5 +46,3 @@ struct SideMenu: View {
 #Preview {
     SideMenu()
 }
-
-
