@@ -35,27 +35,29 @@ struct SideMenu: View {
                 .padding(.top, 40)
                 .opacity(0.7)
 
-            VStack {
-                Rectangle()
-                    .frame(height: 1)
-                    .opacity(0.1)
-                    .padding(.horizontal)
+            VStack(alignment: .leading, spacing: 0) {
 
-                HStack(spacing: 14) {
-                    icon.view()
-                        .frame(width: 32, height: 32)
-                        .opacity(0.6)
+                ForEach(MenuItem.menuItems) { item in
+                    Rectangle()
+                        .frame(height: 1)
+                        .opacity(0.1)
+                        .padding(.horizontal)
+                    HStack(spacing: 14) {
+                        item.icon.view()
+                            .frame(width: 32, height: 32)
+                            .opacity(0.6)
 
-                    Text("Home")
-                        .customFont(.headline)
-                }
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(22)
-                .onTapGesture {
-                    try? icon.setInput("active", value: true)
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                        try? icon.setInput("active", value: true)
+                        Text(item.text)
+                            .customFont(.headline)
                     }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(22)
+                    .onTapGesture {
+                        try? item.icon.setInput("active", value: true)
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                            try? item.icon.setInput("active", value: true)
+                        }
+                }
                 }
             }
 
