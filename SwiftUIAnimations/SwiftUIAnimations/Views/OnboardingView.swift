@@ -12,6 +12,7 @@ struct OnboardingView: View {
 
     let button = RiveViewModel(fileName: "button")
     @State var showModel = false
+    @Binding var show: Bool
 
     var body: some View {
         ZStack {
@@ -47,6 +48,22 @@ struct OnboardingView: View {
                     }
                     .zIndex(1)
             }
+
+            Button {
+                withAnimation {
+                    show = false
+                }
+            } label: {
+                Image(systemName: "xmark")
+                    .frame(width: 36, height: 36)
+                    .background(.black)
+                    .foregroundStyle(.white)
+                    .mask(Circle())
+                    .shadow(color: .black.opacity(0.3), radius: 10, x: 0, y: 10)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+            .padding(20)
+            .offset(y: showModel ? -200 : 80)
         }
     }
 
@@ -108,5 +125,5 @@ struct OnboardingView: View {
 }
 
 #Preview {
-    OnboardingView()
+    OnboardingView(show: .constant(true))
 }
