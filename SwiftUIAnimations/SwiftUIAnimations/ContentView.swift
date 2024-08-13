@@ -84,6 +84,13 @@ struct ContentView: View {
                         isMenuOpen.toggle()
                     }
                 }
+                .onChange(of: isMenuOpen) { oldValue, newValue in
+                    if newValue {
+                        UIApplication.shared.setStatusBarStyle(.lightContent, animated: true)
+                    } else {
+                        UIApplication.shared.setStatusBarStyle(.darkContent, animated: true)
+                    }
+                }
 
             TabBarView()
                 .offset(y: isMenuOpen ? 300 : 0)
