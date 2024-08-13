@@ -10,6 +10,7 @@ import SwiftUI
 
 struct SideMenu: View {
     @State var selectedMenu: SelectedMenu = .home
+    @State var isDarkMode = false
     let icon = RiveViewModel(fileName: "icons", stateMachineName: "HOME_interactivity", artboardName: "HOME")
 
     var body: some View {
@@ -32,6 +33,24 @@ struct SideMenu: View {
             Section(title: "BROWSE", items: MenuItem.menuItems, selectedMenu: $selectedMenu)
 
             Section(title: "HISTORY", items: MenuItem.menuItems2, selectedMenu: $selectedMenu)
+
+            HStack(spacing: 14) {
+                MenuItem.menuItems3[0].icon.view()
+                    .frame(width: 32, height: 32)
+                    .opacity(0.6)
+                    .onChange(of: isDarkMode) { oldValue, newValue in
+                        if newValue {
+                            try? MenuItem.menuItems3[0].icon.setInput("active", value: true)
+                        } else {
+                            try? MenuItem.menuItems3[0].icon.setInput("active", value: false)
+                        }
+                    }
+
+                Text(MenuItem.menuItems3[0].text)
+                    .customFont(.headline)
+                Toggle("", isOn: $isDarkMode)
+            }
+            .padding(20)
 
             Spacer()
         }
