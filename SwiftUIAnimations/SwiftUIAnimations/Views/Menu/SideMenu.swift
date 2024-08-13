@@ -9,6 +9,7 @@ import RiveRuntime
 import SwiftUI
 
 struct SideMenu: View {
+    @State var selectedMenu: SelectedMenu = .home
     let icon = RiveViewModel(fileName: "icons", stateMachineName: "HOME_interactivity", artboardName: "HOME")
 
     var body: some View {
@@ -52,10 +53,20 @@ struct SideMenu: View {
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(22)
+                    .background(
+                        RoundedRectangle(cornerRadius: 10, style: .continuous)
+                            .fill(.blue)
+                            .frame(maxWidth: selectedMenu == item.menu ? .infinity : 0)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    )
+                    .background(Color(.background2))
                     .onTapGesture {
                         try? item.icon.setInput("active", value: true)
                         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                             try? item.icon.setInput("active", value: true)
+                        }
+                        withAnimation {
+                            selectedMenu = item.menu
                         }
                 }
                 }
