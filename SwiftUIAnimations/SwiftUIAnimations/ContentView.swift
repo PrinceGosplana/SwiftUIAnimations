@@ -88,6 +88,14 @@ struct ContentView: View {
             TabBarView()
                 .offset(y: isMenuOpen ? 300 : 0)
                 .offset(y: show ? 200 : 0)
+                .offset(y: -24)
+                .background(
+                    LinearGradient(colors: [Color(.background).opacity(0), Color(.background)], startPoint: .top, endPoint: .bottom)
+                        .frame(height: 150)
+                        .frame(maxHeight: .infinity, alignment: .bottom)
+                        .allowsHitTesting(false)
+                )
+                .ignoresSafeArea()
 
             if show {
                 OnboardingView(show: $show)
